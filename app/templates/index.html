@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translate Text</title>
+</head>
+<body>
+    <h1>Translate Text</h1>
+    <form action="{{ url_for('generate_translate') }}" method="POST">
+        <label for="source_text">Source Language:</label>
+        <input type="text" id="source_text" name="source_text" placeholder="Enter source language"><br><br>
+        <label for="target_text">Target Language:</label>
+        <input type="text" id="target_text" name="target_text" placeholder="Enter target language"><br><br>
+        <input type="submit" value="Translate">
+    </form>
+    <p>Source Text: {{ source_text }}</p>
+    <p>Translated Text: {{ target_text }}</p>
+</body>
+</html>
