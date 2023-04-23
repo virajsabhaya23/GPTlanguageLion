@@ -1,6 +1,5 @@
 import openai
 from dotenv import load_dotenv
-import os
 import streamlit as st
 
 # load environment variables from .env file
