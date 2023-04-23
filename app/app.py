@@ -1,28 +1,22 @@
 import openai
-from flask import *
 from dotenv import load_dotenv
 import os
 import streamlit as st
 
-# initialize Flask app
-# app = Flask(__name__)
+# load environment variables from .env file
+load_dotenv()
 
-load_dotenv()  # load environment variables from .env file
+# Set up the Streamlit UI
+st.sidebar.title('GPT Language Lion')
+st.sidebar.subheader('AI Powered Language Translation Tool')
+st.sidebar.caption('Enter text to translate and select the target language')
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = st.sidebar.text_input('Enter your OpenAI API Key', type='password')
 
-# @app.route("/")
-# def index():
-#     return render_template("index.html")
 
-# @app.route("/generate_translate", methods=["POST"])
 def generate_translate(source_text, target_text):
-
-    # source_text = request.form.get("source_text")
-    # target_text = request.form.get("target_text")
-
     prompt = f"Translate from {source_text} to {target_text}:"
-
     Response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=prompt,
@@ -32,26 +26,17 @@ def generate_translate(source_text, target_text):
         frequency_penalty=0,
         presence_penalty=0,
         stop=None,
-        # stop=["\n", " Translation:"],
     )
     # print("API response : ", Response["choices"][0]["text"].strip())
-
     translated_text = Response["choices"][0]["text"].strip()
-    print("translated text : ", translated_text)
-
     return translated_text
-    # return render_template("index.html", source_text = source_text, target_text = translated_text)
+
 
 # Define the main function that sets up the Streamlit UI and handles the translation process
 def main():
-    # Set up the Streamlit UI
-    st.sidebar.title('GPT Language Lion')
-    st.sidebar.subheader('AI Powered Language Translation Tool')
-    st.sidebar.caption('Enter text to translate and select the target language')
-    
     # Create a text input for the user to enter the text to be translated
     text_input = st.text_area('Enter text to translate : ')
-    
+
     # Create a selectbox for the user to select the target language
     target_language = st.text_input('Enter output language : ')
 
@@ -66,7 +51,6 @@ def main():
         translated_text.text('Translating...')
         translated_text.text(generate_translate(text_input, target_language))
 
+
 if __name__ == "__main__":
     main()
-# if __name__ == "__main__":
-#     app.run(debug=True)
