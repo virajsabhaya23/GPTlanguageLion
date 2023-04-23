@@ -1,4 +1,0 @@
-#ignore mac sys files
-.DS_Store
-.env
-requierments.txt
