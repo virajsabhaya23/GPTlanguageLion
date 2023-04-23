@@ -7,4 +7,3 @@
 - install the requirements.txt file by running `pip install -r requirements.txt`
 - enter the following into CLI `cp .env.sample .env`
 - Now open your .env file and add your API key
-- 
