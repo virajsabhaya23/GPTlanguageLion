@@ -1,1 +1,3 @@
+#ignore mac sys files
+.DS_Store
 .env
