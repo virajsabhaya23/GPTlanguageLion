@@ -1,0 +1,263 @@
+[
+    {
+        "package": "autopep8",
+        "version": "1.6.0",
+        "deps": [
+            {
+                "package": "pycodestyle",
+                "version": "2.8.0"
+            },
+            {
+                "package": "toml",
+                "version": "0.10.2"
+            }
+        ]
+    },
+    {
+        "package": "certifi",
+        "version": "2021.10.8",
+        "deps": []
+    },
+    {
+        "package": "charset-normalizer",
+        "version": "2.0.7",
+        "deps": []
+    },
+    {
+        "package": "click",
+        "version": "8.0.3",
+        "deps": []
+    },
+    {
+        "package": "et-xmlfile",
+        "version": "1.1.0",
+        "deps": []
+    },
+    {
+        "package": "flask",
+        "version": "2.0.2",
+        "deps": [
+            {
+                "package": "itsdangerous",
+                "version": "2.0.1"
+            },
+            {
+                "package": "werkzeug",
+                "version": "2.0.2"
+            },
+            {
+                "package": "markupsafe",
+                "version": "2.0.1"
+            },
+            {
+                "package": "click",
+                "version": "8.0.3"
+            },
+            {
+                "package": "jinja2",
+                "version": "3.0.2"
+            }
+        ]
+    },
+    {
+        "package": "idna",
+        "version": "3.3",
+        "deps": []
+    },
+    {
+        "package": "itsdangerous",
+        "version": "2.0.1",
+        "deps": []
+    },
+    {
+        "package": "jinja2",
+        "version": "3.0.2",
+        "deps": [
+            {
+                "package": "markupsafe",
+                "version": "2.0.1"
+            }
+        ]
+    },
+    {
+        "package": "markupsafe",
+        "version": "2.0.1",
+        "deps": []
+    },
+    {
+        "package": "numpy",
+        "version": "1.21.3",
+        "deps": []
+    },
+    {
+        "package": "openai",
+        "version": "0.19.0",
+        "deps": [
+            {
+                "package": "pandas-stubs",
+                "version": "1.2.0.35"
+            },
+            {
+                "package": "certifi",
+                "version": "2021.10.8"
+            },
+            {
+                "package": "tqdm",
+                "version": "4.62.3"
+            },
+            {
+                "package": "requests",
+                "version": "2.26.0"
+            },
+            {
+                "package": "idna",
+                "version": "3.3"
+            },
+            {
+                "package": "charset-normalizer",
+                "version": "2.0.7"
+            },
+            {
+                "package": "urllib3",
+                "version": "1.26.7"
+            },
+            {
+                "package": "pandas",
+                "version": "1.3.4"
+            },
+            {
+                "package": "openpyxl",
+                "version": "3.0.9"
+            },
+            {
+                "package": "pytz",
+                "version": "2021.3"
+            },
+            {
+                "package": "numpy",
+                "version": "1.21.3"
+            },
+            {
+                "package": "et-xmlfile",
+                "version": "1.1.0"
+            },
+            {
+                "package": "python-dateutil",
+                "version": "2.8.2"
+            },
+            {
+                "package": "six",
+                "version": "1.16.0"
+            }
+        ]
+    },
+    {
+        "package": "openpyxl",
+        "version": "3.0.9",
+        "deps": [
+            {
+                "package": "et-xmlfile",
+                "version": "1.1.0"
+            }
+        ]
+    },
+    {
+        "package": "pandas",
+        "version": "1.3.4",
+        "deps": [
+            {
+                "package": "python-dateutil",
+                "version": "2.8.2"
+            },
+            {
+                "package": "numpy",
+                "version": "1.21.3"
+            },
+            {
+                "package": "six",
+                "version": "1.16.0"
+            },
+            {
+                "package": "pytz",
+                "version": "2021.3"
+            }
+        ]
+    },
+    {
+        "package": "pandas-stubs",
+        "version": "1.2.0.35",
+        "deps": []
+    },
+    {
+        "package": "pycodestyle",
+        "version": "2.8.0",
+        "deps": []
+    },
+    {
+        "package": "python-dateutil",
+        "version": "2.8.2",
+        "deps": [
+            {
+                "package": "six",
+                "version": "1.16.0"
+            }
+        ]
+    },
+    {
+        "package": "python-dotenv",
+        "version": "0.19.2",
+        "deps": []
+    },
+    {
+        "package": "pytz",
+        "version": "2021.3",
+        "deps": []
+    },
+    {
+        "package": "requests",
+        "version": "2.26.0",
+        "deps": [
+            {
+                "package": "idna",
+                "version": "3.3"
+            },
+            {
+                "package": "charset-normalizer",
+                "version": "2.0.7"
+            },
+            {
+                "package": "certifi",
+                "version": "2021.10.8"
+            },
+            {
+                "package": "urllib3",
+                "version": "1.26.7"
+            }
+        ]
+    },
+    {
+        "package": "six",
+        "version": "1.16.0",
+        "deps": []
+    },
+    {
+        "package": "toml",
+        "version": "0.10.2",
+        "deps": []
+    },
+    {
+        "package": "tqdm",
+        "version": "4.62.3",
+        "deps": []
+    },
+    {
+        "package": "urllib3",
+        "version": "1.26.7",
+        "deps": []
+    },
+    {
+        "package": "werkzeug",
+        "version": "2.0.2",
+        "deps": []
+    }
+]
